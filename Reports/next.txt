@@ -19,7 +19,7 @@ Office         PR[1] Holder   Since       Last Election  Contestable[2]
 Arbitor        10    ------   2017-05-15  2014-04-07     Y
 Assessor       10    nichdel  2016-07-19  2016-02-12     Y
 ADoP[3]        10    nichdel  2017-05-18  2016-10-23     Y
-Herald         10    -------  2017-05-15  2015-07-02     Y
+Herald         10    PSS[4]   2017-05-20  2015-07-02     Y
 Prime Minister 10    -------  2016-10-24  2016-10-22     Y
 Promotor       10    Aris     2016-10-21  2016-10-14     Y
 Referee        10    o        2017-04-17  2017-01-14     Y
@@ -67,6 +67,7 @@ Tailor         Y     Ribbons                 2017-05-18
 
 EVENTS
 ------
+2017-05-20   14:43   PSS becomes Herald, via deputisation.
 2017-05-18   16:32   o becomes Surveyor, via election.
 
 <---------------------------------------------------------------------->
