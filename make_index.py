@@ -1,23 +1,20 @@
 import os
 
-folder = 'Reports/'
+fold = 'Reports/'
 
-next = folder + 'next.txt'
+next = 'next.txt'
 
-links = os.listdir(folder)
+links = os.listdir(fold)
 
-links.remove('next.txt')
+links.remove(next)
 links.sort()
 links.reverse()
 
 f = open('index.md', 'w')
 
-f.write("[The next (unofficial) report](" + next + ") \n")
-f.write("\n")
-f.write("[The latest report](" + folder + links.pop(0) + ") \n")
-f.write("\n")
-f.write("The rest: \n")
-f.write("\n")
+f.write("[The next (unofficial) report](" + fold +  next + ") \n\n")
+f.write("[The latest report](" + fold + links.pop(0) + ") \n\n")
+f.write("The rest: \n\n")
 for string in links:
-   f.write("[" + string + "](" + folder + string + ") \n")
-   f.write("\n")
+   f.write("[" + string + "](" + fold + string + ") \n\n")
+f.close()
