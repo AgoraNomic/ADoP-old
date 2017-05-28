@@ -12,9 +12,12 @@ links.reverse()
 
 f = open('index.md', 'w')
 
+f.write("#Office of the ADoP\n\n")
+f.write("##Current\n\n")
 f.write("[The next (unofficial) report](" + fold +  next + ") \n\n")
-f.write("[The latest report](" + fold + links.pop(0) + ") \n\n")
-f.write("The rest: \n\n")
+n = links.pop(0)
+f.write("[The Latest](" + fold + n + ") (" + n + ")\n\n")
+f.write("##Past\n\n")
 for string in links:
    f.write("[" + string + "](" + fold + string + ") \n\n")
 
