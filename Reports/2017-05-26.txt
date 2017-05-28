@@ -56,7 +56,7 @@ Herald         Y     Patent titles           2017-05-20
 Promotor             Proposal pool           2017-05-21        
 Registrar            Players, Fora           2017-05-18
                Y     Player history          ----------        !!!
-Referee				 Rule violations		 2017-05-21
+Referee              Rule violations         2017-05-21
 Reportor             The Agoran Newspaper    2017-05-24        
 Rulekeepor           Short Logical Ruleset   2017-05-17
                Y     Full Logical Ruleset    2017-05-21
@@ -76,9 +76,9 @@ Tailor         Y     Ribbons                 2017-05-18
 EVENTS
 ------
 2017-05-26   21:21   Elections for Assessor, Promotor, Arbitor, and
-					 Rulekeepor result in no officer changes.
+                     Rulekeepor result in no officer changes.
 2017-05-24   14:00   Adoption of Proposal 7852 changes Payrate and
-					 enacts Report Rate.
+                     enacts Report Rate.
 2017-05-21   16:56   nichdel becomes Speaker, via PM.
 2017-05-21   16:56   Quazie becomes PM, via deputisation.
 2017-05-20   20:43   PSS becomes Herald, via deputisation.

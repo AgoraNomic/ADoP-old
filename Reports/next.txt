@@ -1,3 +1,6 @@
+See https://agoranomic.github.io/ADoP/ for past, current, and future
+reports.
+
 <---------------------------------------------------------------------->
 
 Offices and Reports
@@ -56,7 +59,7 @@ Herald         Y     Patent titles           2017-05-20
 Promotor             Proposal pool           2017-05-21        
 Registrar            Players, Fora           2017-05-18
                Y     Player history          ----------        !!!
-Referee				 Rule violations		 2017-05-21
+Referee              Rule violations         2017-05-21
 Reportor             The Agoran Newspaper    2017-05-24        
 Rulekeepor           Short Logical Ruleset   2017-05-17
                Y     Full Logical Ruleset    2017-05-21
