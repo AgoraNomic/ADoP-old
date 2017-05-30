@@ -53,6 +53,7 @@ def new_reporting_need(name):
   }
 
 reporting_needs = {}
+abrev_num = 3
 def get_report_need(name):
   if name not in reporting_needs:
     reporting_needs[name] = new_reporting_need(name)
@@ -81,12 +82,18 @@ def sh_n(name):
 def shorten(name, amount):
   if (len(name) > amount):
     abrev = "".join(word[0] for word in name.split())
-    abrevs[abrev] = name
-    return abrev
+    if abrev not in abrevs:
+      global abrev_num
+      abrevs[abrev] = {'name': name, 'text': abrev + " [{0}]".format(abrev_num)}
+      abrev_num += 1
+
+    return abrevs[abrev]['text']
   return name
 
 def clear_abrevs():
   abrevs.clear()
+  global abrev_num
+  abrev_num = 3
 
 def can_elect(name, date):
   if name.lower() == 'speaker':
@@ -156,7 +163,7 @@ def print_reporting_info():
 
 def print_abrev(start_idx):
   for abrev in abrevs:
-    print "[{0}] {1}".format(start_idx, abrevs[abrev])
+    print "[{0}] {1}".format(start_idx, abrevs[abrev]['name'])
     start_idx += 1
   clear_abrevs()
 
