@@ -9,9 +9,8 @@ Date of last report: ???-??-??
 
 Informal measures
 -----------------
-
 Administrative Health [1]: ??%
-Consolidation [2]: 2.14
+Consolidation [2]: 1.83
 
 [1] Calculated by the weighted average of # of offices filled/total and
 # of reports not late/total. A higher Administrative Health % indicates
@@ -25,24 +24,25 @@ group's hands.
 NB: The "PR|RR" and "Holder" columns of this report are
 self-ratifying.
 
- Office          PR|RR[1]  Holder   Since       Last Election  Can Elect[2] 
-----------------------------------------------------------------------------
- Arbitor         2?|2?     ais523   2017-05-15  2017-05-26                  
- Assessor        2?|2?     nichdel  2016-07-19  2017-05-26                  
- ADoP[3]         2?|2?     nichdel  2017-05-18  2016-10-23     Y            
- Herald          2?|2?     PSS[4]   2017-05-20  2015-07-02     Y            
- Prime Minister  2?|2?     Quazie   2017-05-21  2016-10-22     Y            
- Promotor        2?|2?     Aris     2016-10-21  2017-05-26                  
- Referee         2?|2?     o        2017-04-17  2017-01-14     Y            
- Registrar       2?|2?     PSS[4]   2017-04-18  2014-08-31     Y            
- Reportor        2?|2?     nichdel  2016-09-10  2016-08-30     Y            
- Rulekeepor      2?|2?     Gaelan   2017-05-17  2017-05-26                  
- Secretary       2?|2?     o        2016-11-06  ----------     Y            
- Speaker         2?|2?     nichdel  2017-05-21  2014-04-21     Never        
- Superintendent  2?|2?     Quazie   2017-04-16  ----------     Y            
- Surveyor        2?|2?     o        2017-05-08  2017-05-10                  
- Tailor          2?|2?     ais523   2017-05-17  ----------     Y            
 
+Office          PR|RR[1]  Holder  Since       Last Election  Can Elect[2]  
+---------------------------------------------------------------------------
+Arbitor         2?|2?     ais523  2017-05-15  2017-05-26                   
+Assessor        2?|2?     ------  ----------  2017-05-26                   
+ADoP[3]         2?|2?     ------  ----------  2016-10-23     Y             
+Herald          2?|2?     PSS[4]  2017-05-20  2015-07-02     Y             
+Prime Minister  2?|2?     Quazie  2017-05-21  2016-10-22     Y             
+Promotor        2?|2?     Aris    2016-10-21  2017-05-26                   
+Referee         2?|2?     o       2017-04-17  2017-01-14     Y             
+Registrar       2?|2?     PSS[4]  2017-04-18  2014-08-31     Y             
+Reportor        2?|2?     ------  ----------  2016-08-30     Y             
+Rulekeepor      2?|2?     Gaelan  2017-05-17  2017-05-26                   
+Secretary       2?|2?     o       2016-11-06  ----------     Y             
+Speaker         2?|2?     ------  ----------  2014-04-21     Never         
+Superintendent  2?|2?     Quazie  2017-04-16  ----------     Y             
+Surveyor        2?|2?     o       2017-05-08  2017-05-10                   
+Tailor          2?|2?     ais523  2017-05-17  ----------     Y             
+---------------------------------------------------------------------------
 [1] Payrate and Report Rate
 [2] Whether an election for this position can be initiated by
 announcement, as per R2154(1). Note any player can initiate an
@@ -50,24 +50,54 @@ election for any office with 4 Support per R2154(2).
 [3] Publius Scribonius Scholasticus
 [4] Associate Director of Personnel
 
- Office          M[1]  Report                  Last Published  Late[2] 
------------------------------------------------------------------------
- ADoP[3]               Offices                 ????-??-??              
- Herald          Y     Patent titles           ????-??-??              
- Promotor              Proposal pool           ????-??-??              
- Referee               Rule violations         ????-??-??              
- Registrar             Players, Fora           ????-??-??              
- Registrar       Y     Player history          ????-??-??              
- Reportor              The Agoran Newspaper    ????-??-??              
- Rulekeepor            Short Logical Ruleset   ????-??-??              
- Rulekeepor      Y     Full Logical Ruleset    ????-??-??              
- Secretary             OLEaB[4]                ????-??-??              
- Secretary       Y     Charters                ????-??-??              
- Superintendent        Agencies (incremental)  ????-??-??              
- Superintendent  Y     Agencies (Full)         ????-??-??              
- Tailor          Y     Ribbons                 ????-??-??              
 
+Office          M[1]  Report                  Last Published  Late[2]  
+-----------------------------------------------------------------------
+ADoP[3]               Offices                 ????-??-??               
+Herald          Y     Patent titles           ????-??-??      !        
+Promotor              Proposal pool           ????-??-??               
+Referee               Rule violations         ????-??-??               
+Registrar             Players, Fora           ????-??-??               
+Registrar       Y     Player history          ????-??-??      !        
+Reportor              The Agoran Newspaper    ????-??-??               
+Rulekeepor            Short Logical Ruleset   ????-??-??               
+Rulekeepor      Y     Full Logical Ruleset    ????-??-??      !        
+Secretary             OLEaB[4]                ????-??-??               
+Secretary       Y     Charters                ????-??-??      !        
+Superintendent        Agencies (incremental)  ????-??-??               
+Superintendent  Y     Agencies (Full)         ????-??-??      !        
+Tailor          Y     Ribbons                 ????-??-??      !        
+-----------------------------------------------------------------------
 [1] Monthly
 [2] ! = 1 period missed. !! = 2 periods missed. !!! = 3+ periods missed.
 [3] Associate Director of Personnel
 [4] Organizations, Lockout, Expediture, and Balances
+
+EVENTS
+------
+2016-07-19 nichdel deputizes to become Assessor
+2016-09-10 nichdel deputizes to become Reportor
+2016-10-21 Aris deputizes to become Promotor
+2016-11-06 o deputizes to become Secretary
+2017-04-16 Quazie deputizes to become Superintendent
+2017-04-17 o deputizes to become Referee
+2017-04-18 Publius Scribonius Scholasticus deputizes to become Registrar
+2017-05-08 o deputizes to become Surveyor
+2017-05-10 o elected to Surveyor
+2017-05-15 ais523 deputizes to become Arbitor
+2017-05-17 Gaelan deputizes to become Rulekeepor
+2017-05-17 ais523 deputizes to become Tailor
+2017-05-18 nichdel deputizes to become Associate Director of Personnel
+2017-05-20 Publius Scribonius Scholasticus deputizes to become Herald
+2017-05-21 Quazie deputizes to become Prime Minister
+2017-05-21 nichdel deputizes to become Speaker
+2017-05-26 ais523 elected to Arbitor
+2017-05-26 nichdel elected to Assessor
+2017-05-26 Aris elected to Promotor
+2017-05-26 Gaelan elected to Rulekeepor
+2017-05-29 nichdel resigns from Assessor
+2017-05-29 nichdel resigns from Speaker
+2017-05-29 nichdel resigns from Associate Director of Personnel
+2017-05-29 nichdel resigns from Reportor
+
+<---------------------------------------------------------------------->

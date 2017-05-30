@@ -11,19 +11,24 @@ __location__ = os.path.realpath(
     os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
 empty_holder = '------'
+empty_date = '----------'
+offices = {}
+reporting_needs = {}
+abrev_num = 3
+event_log = []
+
 
 def new_agency(name):
   return {
     'name': name,
-    'elected': '----------',
-    'since': '----------',
+    'elected': empty_date,
+    'since': empty_date,
     'holder': empty_holder,
     'PR': '2?',
     'RR' : '2?',
   }
 
-offices = {}
-def get_agency(name):
+def get_office(name):
   if name not in offices:
     offices[name] = new_agency(name)
   return offices[name]
@@ -37,13 +42,21 @@ def populate_events():
       name = row[1]
       event = row[2]
       actor = row[3]
-      agency = get_agency(name)
+      office = get_office(name)
       if event.lower() == 'e':
-        agency['elected'] = date
-        agency['holder'] = actor
+        office['elected'] = date
+        office['holder'] = actor
+        if not actor in ['UNKNOWN', empty_holder]:
+          event_log.append('{0} {1} elected to {2}'.format(date, actor, name))
       elif event.lower() in ['d', 'i']:
-        agency['since'] = date
-        agency['holder'] = actor
+        office['since'] = date
+        office['holder'] = actor
+        if not actor in ['UNKNOWN', empty_holder]:
+          event_log.append('{0} {1} deputizes to become {2}'.format(date, actor, name))
+      elif event.lower() == 'r':
+        office['since'] = empty_date
+        office['holder'] = empty_holder
+        event_log.append('{0} {1} resigns from {2}'.format(date, actor, name))
 
 def new_reporting_need(name):
   return {
@@ -52,8 +65,6 @@ def new_reporting_need(name):
     'weekly' : None,
   }
 
-reporting_needs = {}
-abrev_num = 3
 def get_report_need(name):
   if name not in reporting_needs:
     reporting_needs[name] = new_reporting_need(name)
@@ -111,6 +122,8 @@ def print_table(data):
   table = AsciiTable(data)
   table.outer_border =False
   table.inner_column_border= False
+  table.padding_left = 0
+  table.padding_right =2
 
   output = table.table
   print
@@ -178,16 +191,17 @@ Date of this report: {0}
 Date of last report: {1}
 
 Informal measures
------------------
-""".format(datetime.now().date().isoformat(),"???-??-??")
+-----------------""".format(datetime.now().date().isoformat(),"???-??-??")
 
 def consolidation_num():
   names = Set()
+  valid_offices = 0
   for agency in offices:
     name = offices[agency]['holder']
     if name is not empty_holder:
       names.add(name)
-  return len(offices)/float(len(names))
+      valid_offices += 1
+  return valid_offices/float(len(names))
 
 
 def print_health():
@@ -204,6 +218,14 @@ bad, but means Agora is putting more power & responsibility in a small
 group's hands.
 """.format("??", round(consolidation_num(),2))
 
+def print_events():
+  print """
+EVENTS
+------"""
+  for event in event_log:
+    print event
+
+
 populate_reporting_needs()
 populate_events()
 
@@ -211,3 +233,5 @@ print_header()
 print_health()
 print_offices()
 print_reporting_info()
+print_events()
+print('\n<---------------------------------------------------------------------->')
