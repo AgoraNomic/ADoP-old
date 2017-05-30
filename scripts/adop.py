@@ -22,11 +22,11 @@ def new_agency(name):
     'RR' : '2?',
   }
 
-agencies = {}
+offices = {}
 def get_agency(name):
-  if name not in agencies:
-    agencies[name] = new_agency(name)
-  return agencies[name]
+  if name not in offices:
+    offices[name] = new_agency(name)
+  return offices[name]
 
 def populate_events():
   with open(os.path.join(__location__, 'events.csv')) as csvfile:
@@ -107,14 +107,24 @@ def can_elect(name, date):
   return 'Y'
 
 
-def print_agencies():
+def print_table(data):
+  table = AsciiTable(data)
+  table.outer_border =False
+  table.inner_column_border= False
+
+  output = table.table
+  print
+  print
+  print output
+  print output.split('\n')[1]
+
+def print_offices():
   print """NB: The "PR|RR" and "Holder" columns of this report are
-self-ratifying.
-"""
+self-ratifying."""
 
   a_for_table = [['Office', 'PR|RR[1]', 'Holder', 'Since', 'Last Election', 'Can Elect[2]']]
-  for agency in sorted(agencies.keys()):
-    info = agencies[agency]
+  for agency in sorted(offices.keys()):
+    info = offices[agency]
     to_insert = [sh_a(info['name']),
                         info['PR'] + '|' + info['RR'],
                         sh_n(info['holder']),
@@ -123,12 +133,7 @@ self-ratifying.
                         can_elect(info['name'], info['elected'])]
     a_for_table.append(to_insert)
 
-  table = AsciiTable(a_for_table)
-  table.outer_border =False
-  table.inner_column_border= False
-
-  print table.table
-  print
+  print_table(a_for_table)
   print """[1] Payrate and Report Rate
 [2] Whether an election for this position can be initiated by
 announcement, as per R2154(1). Note any player can initiate an
@@ -150,13 +155,8 @@ def print_reporting_info():
                           'Y',
                           shorten(info['monthly'], 22),
                           '????-??-??',
-                          ''])
-  table = AsciiTable(r_for_table)
-  table.outer_border =False
-  table.inner_column_border= False
-  print
-  print table.table
-  print
+                          '!'])
+  print_table(r_for_table)
   print """[1] Monthly
 [2] ! = 1 period missed. !! = 2 periods missed. !!! = 3+ periods missed."""
   print_abrev(3)
@@ -183,11 +183,11 @@ Informal measures
 
 def consolidation_num():
   names = Set()
-  for agency in agencies:
-    name = agencies[agency]['holder']
+  for agency in offices:
+    name = offices[agency]['holder']
     if name is not empty_holder:
       names.add(name)
-  return len(agencies)/float(len(names))
+  return len(offices)/float(len(names))
 
 
 def print_health():
@@ -204,10 +204,10 @@ bad, but means Agora is putting more power & responsibility in a small
 group's hands.
 """.format("??", round(consolidation_num(),2))
 
+populate_reporting_needs()
 populate_events()
+
 print_header()
 print_health()
-print_agencies()
-
-populate_reporting_needs()
+print_offices()
 print_reporting_info()
