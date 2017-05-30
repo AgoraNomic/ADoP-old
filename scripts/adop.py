@@ -84,7 +84,7 @@ def shorten(name, amount):
     abrev = "".join(word[0] for word in name.split())
     if abrev not in abrevs:
       global abrev_num
-      abrevs[abrev] = {'name': name, 'text': abrev + " [{0}]".format(abrev_num)}
+      abrevs[abrev] = {'name': name, 'text': abrev + "[{0}]".format(abrev_num)}
       abrev_num += 1
 
     return abrevs[abrev]['text']
