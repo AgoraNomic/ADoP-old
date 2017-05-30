@@ -71,7 +71,7 @@ def populate_reporting_needs():
       elif report_type.lower() == 'w':
         report_info['weekly'] = report_name
 
-
+abrevs = {}
 def sh_a(name):
   return shorten(name, 14)
 
@@ -80,8 +80,13 @@ def sh_n(name):
 
 def shorten(name, amount):
   if (len(name) > amount):
-    return "".join(word[0] for word in name.split())
+    abrev = "".join(word[0] for word in name.split())
+    abrevs[abrev] = name
+    return abrev
   return name
+
+def clear_abrevs():
+  abrevs.clear()
 
 def can_elect(name, date):
   if name.lower() == 'speaker':
@@ -116,6 +121,12 @@ self-ratifying.
   table.inner_column_border= False
 
   print table.table
+  print
+  print """[1] Payrate and Report Rate
+[2] Whether an election for this position can be initiated by
+announcement, as per R2154(1). Note any player can initiate an
+election for any office with 4 Support per R2154(2)."""
+  print_abrev(3)
 
 def print_reporting_info():
   r_for_table = [['Office', 'M[1]','Report','Last Published','Late[2]']]
@@ -138,6 +149,16 @@ def print_reporting_info():
   table.inner_column_border= False
   print
   print table.table
+  print
+  print """[1] Monthly
+[2] ! = 1 period missed. !! = 2 periods missed. !!! = 3+ periods missed."""
+  print_abrev(3)
+
+def print_abrev(start_idx):
+  for abrev in abrevs:
+    print "[{0}] {1}".format(start_idx, abrevs[abrev])
+    start_idx += 1
+  clear_abrevs()
 
 def print_header():
   print """See https://agoranomic.github.io/ADoP/ for past, current, and future
