@@ -12,7 +12,9 @@ links.reverse()
 
 f = open('index.md', 'w')
 
-f.write("# Office of the ADoP\n\n")
+f.write("# Office of the ADoP\n")
+f.write('### Current Office Holder: Quazie\n\n')
+
 f.write("----\n\n")
 f.write("## Current\n\n")
 f.write("[The next (unofficial) report](" + fold +  next + ") \n\n")
