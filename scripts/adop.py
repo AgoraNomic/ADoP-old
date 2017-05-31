@@ -28,6 +28,15 @@ def new_agency(name):
     'RR' : '2?',
   }
 
+def new_reporting_need(name):
+  return {
+    'name': name,
+    'monthly': None,
+    'monthly_date' : empty_date,
+    'weekly' : None,
+    'weekly_date' : empty_date,
+  }
+
 def get_office(name):
   if name not in offices:
     offices[name] = new_agency(name)
@@ -52,18 +61,19 @@ def populate_events():
         office['since'] = date
         office['holder'] = actor
         if not actor in ['UNKNOWN', empty_holder]:
-          event_log.append('{0} {1} deputizes to become {2}'.format(date, actor, name))
+          event_log.append('{0} {1} deputizes to become {2}'.format(date, sh_n(actor, False), sh_a(name, False)))
       elif event.lower() == 'r':
         office['since'] = empty_date
         office['holder'] = empty_holder
-        event_log.append('{0} {1} resigns from {2}'.format(date, actor, name))
-
-def new_reporting_need(name):
-  return {
-    'name': name,
-    'monthly': None,
-    'weekly' : None,
-  }
+        event_log.append('{0} {1} resigns from {2}'.format(date, sh_n(actor, False), sh_a(name, False)))
+      elif event.lower() == 'w':
+        report_info = get_report_need(name)
+        report_info['weekly_date'] = date
+        event_log.append('{0} {1} publishes weekly {2} report'.format(date, sh_n(actor, False), sh_a(name, False)))
+      elif event.lower() == 'm':
+        report_info = get_report_need(name)
+        report_info['monthly_date'] = date
+        event_log.append('{0} {1} publishes monthly {2} report'.format(date, sh_n(actor, False), sh_a(name, False)))
 
 def get_report_need(name):
   if name not in reporting_needs:
@@ -84,19 +94,22 @@ def populate_reporting_needs():
         report_info['weekly'] = report_name
 
 abrevs = {}
-def sh_a(name):
-  return shorten(name, 14)
+def sh_a(name, add_num=True):
+  return shorten(name, 14, add_num)
 
-def sh_n(name):
-  return shorten(name, 8)
+def sh_n(name, add_num=True):
+  return shorten(name, 8, add_num)
 
-def shorten(name, amount):
+def shorten(name, amount, add_num=True):
   if (len(name) > amount):
     abrev = "".join(word[0] for word in name.split())
     if abrev not in abrevs:
-      global abrev_num
-      abrevs[abrev] = {'name': name, 'text': abrev + "[{0}]".format(abrev_num)}
-      abrev_num += 1
+      if add_num:
+        global abrev_num
+        abrevs[abrev] = {'name': name, 'text': abrev + "[{0}]".format(abrev_num)}
+        abrev_num += 1
+      else:
+        abrevs[abrev] = {'name': name, 'text': abrev}
 
     return abrevs[abrev]['text']
   return name
@@ -116,6 +129,20 @@ def can_elect(name, date):
       return 'Y'
     return ''
   return 'Y'
+
+def week_late(date):
+  if date != '----------':
+    today = datetime.now()
+    d1 = datetime.strptime(date, "%Y-%m-%d")
+    return "!"*min(3,abs((today - d1).days) / 7)
+  return '!!!'
+
+def month_late(date):
+  if date != '----------':
+    today = datetime.now()
+    d1 = datetime.strptime(date, "%Y-%m-%d")
+    return "!"*min(3,abs((today - d1).days) / 30)
+  return '!!!'
 
 
 def print_table(data):
@@ -161,14 +188,14 @@ def print_reporting_info():
       r_for_table.append([sh_a(info['name']),
                           '',
                           shorten(info['weekly'], 22),
-                          '????-??-??',
-                          ''])
+                          info['weekly_date'],
+                          week_late(info['weekly_date'])])
     if info['monthly']:
       r_for_table.append([sh_a(info['name']),
                           'Y',
                           shorten(info['monthly'], 22),
-                          '????-??-??',
-                          '!'])
+                          info['monthly_date'],
+                          month_late(info['monthly_date'])])
   print_table(r_for_table)
   print """[1] Monthly
 [2] ! = 1 period missed. !! = 2 periods missed. !!! = 3+ periods missed."""
@@ -191,7 +218,7 @@ Date of this report: {0}
 Date of last report: {1}
 
 Informal measures
------------------""".format(datetime.now().date().isoformat(),"???-??-??")
+-----------------""".format(datetime.now().date().isoformat(),reporting_needs['Associate Director of Personnel']['weekly_date'])
 
 def consolidation_num():
   names = Set()

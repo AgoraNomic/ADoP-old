@@ -5,7 +5,7 @@ reports.
 
 Offices and Reports
 Date of this report: 2017-05-30
-Date of last report: ???-??-??
+Date of last report: 2017-05-26
 
 Informal measures
 -----------------
@@ -29,12 +29,12 @@ Office          PR|RR[1]  Holder  Since       Last Election  Can Elect[2]
 ---------------------------------------------------------------------------
 Arbitor         2?|2?     ais523  2017-05-15  2017-05-26                   
 Assessor        2?|2?     ------  ----------  2017-05-26                   
-ADoP[3]         2?|2?     ------  ----------  2016-10-23     Y             
-Herald          2?|2?     PSS[4]  2017-05-20  2015-07-02     Y             
+ADoP            2?|2?     ------  ----------  2016-10-23     Y             
+Herald          2?|2?     PSS     2017-05-20  2015-07-02     Y             
 Prime Minister  2?|2?     Quazie  2017-05-21  2016-10-22     Y             
 Promotor        2?|2?     Aris    2016-10-21  2017-05-26                   
 Referee         2?|2?     o       2017-04-17  2017-01-14     Y             
-Registrar       2?|2?     PSS[4]  2017-04-18  2014-08-31     Y             
+Registrar       2?|2?     PSS     2017-04-18  2014-08-31     Y             
 Reportor        2?|2?     ------  ----------  2016-08-30     Y             
 Rulekeepor      2?|2?     Gaelan  2017-05-17  2017-05-26                   
 Secretary       2?|2?     o       2016-11-06  ----------     Y             
@@ -53,20 +53,21 @@ election for any office with 4 Support per R2154(2).
 
 Office          M[1]  Report                  Last Published  Late[2]  
 -----------------------------------------------------------------------
-ADoP[3]               Offices                 ????-??-??               
-Herald          Y     Patent titles           ????-??-??      !        
-Promotor              Proposal pool           ????-??-??               
-Referee               Rule violations         ????-??-??               
-Registrar             Players, Fora           ????-??-??               
-Registrar       Y     Player history          ????-??-??      !        
-Reportor              The Agoran Newspaper    ????-??-??               
-Rulekeepor            Short Logical Ruleset   ????-??-??               
-Rulekeepor      Y     Full Logical Ruleset    ????-??-??      !        
-Secretary             OLEaB[4]                ????-??-??               
-Secretary       Y     Charters                ????-??-??      !        
-Superintendent        Agencies (incremental)  ????-??-??               
-Superintendent  Y     Agencies (Full)         ????-??-??      !        
-Tailor          Y     Ribbons                 ????-??-??      !        
+ADoP[3]               Offices                 2017-05-26               
+Herald          Y     Patent titles           2017-05-20               
+Promotor              Proposal pool           2017-05-21      !        
+Referee               Rule violations         2017-05-21      !        
+Registrar             Players, Fora           2017-05-28               
+Registrar       Y     Player history          ----------      !!!      
+Reportor              The Agoran Newspaper    2017-05-24               
+Rulekeepor            Short Logical Ruleset   2017-05-28               
+Rulekeepor      Y     Full Logical Ruleset    2017-05-28               
+Secretary             OLEaB[4]                2017-05-22      !        
+Secretary       Y     Charters                2017-05-01               
+Superintendent        Agencies (incremental)  2017-05-25               
+Superintendent  Y     Agencies (Full)         2017-05-18               
+Surveyor              Estates                 2017-05-22      !        
+Tailor          Y     Ribbons                 2017-05-18               
 -----------------------------------------------------------------------
 [1] Monthly
 [2] ! = 1 period missed. !! = 2 periods missed. !!! = 3+ periods missed.
@@ -81,23 +82,40 @@ EVENTS
 2016-11-06 o deputizes to become Secretary
 2017-04-16 Quazie deputizes to become Superintendent
 2017-04-17 o deputizes to become Referee
-2017-04-18 Publius Scribonius Scholasticus deputizes to become Registrar
+2017-04-18 PSS deputizes to become Registrar
+2017-05-01 o publishes monthly Secretary report
 2017-05-08 o deputizes to become Surveyor
 2017-05-10 o elected to Surveyor
 2017-05-15 ais523 deputizes to become Arbitor
 2017-05-17 Gaelan deputizes to become Rulekeepor
+2017-05-17 Gaelan publishes weekly Rulekeepor report
 2017-05-17 ais523 deputizes to become Tailor
-2017-05-18 nichdel deputizes to become Associate Director of Personnel
-2017-05-20 Publius Scribonius Scholasticus deputizes to become Herald
+2017-05-18 nichdel deputizes to become ADoP
+2017-05-18 PSS publishes weekly Registrar report
+2017-05-18 Quazie publishes monthly Superintendent report
+2017-05-18 ais523 publishes monthly Tailor report
+2017-05-20 PSS deputizes to become Herald
+2017-05-20 PSS publishes monthly Herald report
 2017-05-21 Quazie deputizes to become Prime Minister
+2017-05-21 Aris publishes weekly Promotor report
+2017-05-21 o publishes weekly Referee report
+2017-05-21 Gaelan publishes monthly Rulekeepor report
 2017-05-21 nichdel deputizes to become Speaker
+2017-05-22 o publishes weekly Secretary report
+2017-05-22 o publishes weekly Surveyor report
+2017-05-24 nichdel publishes weekly Reportor report
+2017-05-25 Quazie publishes weekly Superintendent report
 2017-05-26 ais523 elected to Arbitor
 2017-05-26 nichdel elected to Assessor
+2017-05-26 nichdel publishes weekly ADoP report
 2017-05-26 Aris elected to Promotor
 2017-05-26 Gaelan elected to Rulekeepor
+2017-05-28 PSS publishes weekly Registrar report
+2017-05-28 Gaelan publishes monthly Rulekeepor report
+2017-05-28 Gaelan publishes weekly Rulekeepor report
 2017-05-29 nichdel resigns from Assessor
-2017-05-29 nichdel resigns from Speaker
-2017-05-29 nichdel resigns from Associate Director of Personnel
+2017-05-29 nichdel resigns from ADoP
 2017-05-29 nichdel resigns from Reportor
+2017-05-29 nichdel resigns from Speaker
 
 <---------------------------------------------------------------------->

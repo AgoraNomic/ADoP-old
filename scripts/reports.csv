@@ -9,6 +9,7 @@ Rulekeepor,W,Short Logical Ruleset
 Rulekeepor,M,Full Logical Ruleset
 Secretary,W,"Organizations, Lockout, Expediture, and Balances"
 Secretary,M,Charters
+Surveyor,W,Estates
 Superintendent,W,Agencies (incremental)
 Superintendent,M,Agencies (Full)
 Tailor,M,Ribbons
