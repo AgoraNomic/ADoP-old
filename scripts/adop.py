@@ -17,15 +17,14 @@ reporting_needs = {}
 abrev_num = 3
 event_log = []
 
-
 def new_agency(name):
   return {
     'name': name,
     'elected': empty_date,
     'since': empty_date,
     'holder': empty_holder,
-    'PR': '2?',
-    'RR' : '2?',
+    'PR': '2',
+    'RR' : '2',
   }
 
 def new_reporting_need(name):
@@ -54,9 +53,12 @@ def populate_events():
       office = get_office(name)
       if event.lower() == 'e':
         office['elected'] = date
+        if office['holder'] != actor:
+          office['since'] = date
         office['holder'] = actor
         if not actor in ['UNKNOWN', empty_holder]:
           event_log.append('{0} {1} elected to {2}'.format(date, actor, name))
+
       elif event.lower() in ['d', 'i']:
         office['since'] = date
         office['holder'] = actor
@@ -131,17 +133,16 @@ def can_elect(name, date):
   return 'Y'
 
 def week_late(date):
-  if date != '----------':
-    today = datetime.now()
-    d1 = datetime.strptime(date, "%Y-%m-%d")
-    return "!"*min(3,abs((today - d1).days) / 7)
-  return '!!!'
+  return show_bangs(date, 7)
 
 def month_late(date):
+  return show_bangs(date, 30)
+
+def show_bangs(date, duration):
   if date != '----------':
     today = datetime.now()
     d1 = datetime.strptime(date, "%Y-%m-%d")
-    return "!"*min(3,abs((today - d1).days) / 30)
+    return "!"*min(3,abs((today - d1).days) / duration)
   return '!!!'
 
 
@@ -166,7 +167,7 @@ self-ratifying."""
   for agency in sorted(offices.keys()):
     info = offices[agency]
     to_insert = [sh_a(info['name']),
-                        info['PR'] + '|' + info['RR'],
+                        "{0:>2}|{1:<2}".format(info['PR'], info['RR']),
                         sh_n(info['holder']),
                         info['since'],
                         info['elected'],
@@ -230,6 +231,29 @@ def consolidation_num():
       valid_offices += 1
   return valid_offices/float(len(names))
 
+def health_val():
+  completed = 0
+  availible = 0
+
+  for agency in offices:
+    name = offices[agency]['holder']
+    availible += 1
+    if name is not empty_holder:
+      completed += 1
+
+  for report in reporting_needs.keys():
+    info = reporting_needs[report]
+    if info['weekly']:
+      availible += 1
+      if not week_late(info['weekly_date']):
+        completed += 1
+    if info['monthly']:
+      availible += 1
+      if not week_late(info['monthly_date']):
+        completed += 1
+
+  return round((float(completed)/availible) * 100,2)
+
 
 def print_health():
   print """Administrative Health [1]: {0}%
@@ -243,7 +267,7 @@ a more active bureaucracy.
 unique officeholders. A higher consolidation rating is not necessarily
 bad, but means Agora is putting more power & responsibility in a small
 group's hands.
-""".format("??", round(consolidation_num(),2))
+""".format(health_val(), round(consolidation_num(),2))
 
 def print_events():
   print """
