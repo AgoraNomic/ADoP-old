@@ -9,7 +9,7 @@ Date of last report: 2017-05-26
 
 Informal measures
 -----------------
-Administrative Health [1]: 56.67%
+Administrative Health [1]: 66.67%
 Consolidation [2]: 1.83
 
 [1] Calculated by the weighted average of # of offices filled/total and
@@ -59,14 +59,14 @@ Promotor              Proposal pool           2017-05-21      !
 Referee               Rule violations         2017-05-21      !        
 Registrar             Players, Fora           2017-05-28               
 Registrar       Y     Player history          2017-05-31               
-Reportor              The Agoran Newspaper    2017-05-24      !        
+Reportor              The Agoran Newspaper    2017-05-24               
 Rulekeepor            Short Logical Ruleset   2017-05-28               
 Rulekeepor      Y     Full Logical Ruleset    2017-05-28               
-Secretary             OLEaB[4]                2017-05-22      !        
-Secretary       Y     Charters                2017-05-01      !        
+Secretary             OLEaB[4]                2017-05-22               
+Secretary       Y     Charters                2017-05-01               
 Superintendent        Agencies (incremental)  2017-05-25               
 Superintendent  Y     Agencies (Full)         2017-05-18               
-Surveyor              Estates                 2017-05-22      !        
+Surveyor              Estates                 2017-05-22               
 Tailor          Y     Ribbons                 2017-05-18               
 -----------------------------------------------------------------------
 [1] Monthly

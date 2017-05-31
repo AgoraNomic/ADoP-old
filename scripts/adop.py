@@ -2,7 +2,7 @@ import csv
 import os
 import sys
 
-from datetime import datetime
+from datetime import datetime, timedelta
 from sets import Set
 from terminaltables import AsciiTable
 from textwrap import TextWrapper
@@ -132,19 +132,29 @@ def can_elect(name, date):
     return ''
   return 'Y'
 
+def weeks_between(d1, d2):
+  monday1 = (d1 - timedelta(days=d1.weekday()))
+  monday2 = (d2 - timedelta(days=d2.weekday()))
+
+  return abs((monday2 - monday1).days) / 7
+
+def months_between(d1, d2):
+    return (d1.year - d2.year) * 12 + d1.month - d2.month
+
 def week_late(date):
-  return show_bangs(date, 7)
-
-def month_late(date):
-  return show_bangs(date, 30)
-
-def show_bangs(date, duration):
   if date != '----------':
     today = datetime.now()
     d1 = datetime.strptime(date, "%Y-%m-%d")
-    return "!"*min(3,abs((today - d1).days) / duration)
+    return "!"*max(0,min(3,weeks_between(today, d1) - 1 ))
   return '!!!'
 
+
+def month_late(date):
+  if date != '----------':
+    today = datetime.now()
+    d1 = datetime.strptime(date, "%Y-%m-%d")
+    return "!"*max(0,min(3,months_between(today, d1) -1))
+  return '!!!'
 
 def print_table(data):
   table = AsciiTable(data)
