@@ -4,13 +4,13 @@ reports.
 <---------------------------------------------------------------------->
 
 Offices and Reports
-Date of this report: 2017-05-31
+Date of this report: 2017-06-01
 Date of last report: 2017-05-26
 
 Informal measures
 -----------------
-Administrative Health [1]: 66.67%
-Consolidation [2]: 1.83
+Administrative Health [1]: 70.0%
+Consolidation [2]: 2.00
 
 [1] Calculated by the weighted average of # of offices filled/total and
 # of reports not late/total. A higher Administrative Health % indicates
@@ -38,7 +38,7 @@ Registrar        2|2      PSS     2017-04-18  2014-08-31     Y
 Reportor         2|2      ------  ----------  2016-08-30     Y             
 Rulekeepor       2|2      Gaelan  2017-05-17  2017-05-26                   
 Secretary        2|2      o       2016-11-06  ----------     Y             
-Speaker          2|2      ------  ----------  2014-04-21     Never         
+Speaker          2|2      ais523  2017-06-01  2014-04-21     Never         
 Superintendent   2|2      Quazie  2017-04-16  ----------     Y             
 Surveyor         2|2      o       2017-05-08  2017-05-10                   
 Tailor           2|2      ais523  2017-05-17  ----------     Y             
@@ -100,7 +100,7 @@ EVENTS
 2017-05-21 Aris publishes weekly Promotor report
 2017-05-21 o publishes weekly Referee report
 2017-05-21 Gaelan publishes monthly Rulekeepor report
-2017-05-21 nichdel deputizes to become Speaker
+2017-05-21 nichdel appointed to Speaker
 2017-05-22 o publishes weekly Secretary report
 2017-05-22 o publishes weekly Surveyor report
 2017-05-24 nichdel publishes weekly Reportor report
@@ -118,5 +118,6 @@ EVENTS
 2017-05-29 nichdel resigns from Reportor
 2017-05-29 nichdel resigns from Speaker
 2017-05-31 PSS publishes monthly Registrar report
+2017-06-01 ais523 appointed to Speaker
 
 <---------------------------------------------------------------------->

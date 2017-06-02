@@ -59,11 +59,14 @@ def populate_events():
         if not actor in ['UNKNOWN', empty_holder]:
           event_log.append('{0} {1} elected to {2}'.format(date, actor, name))
 
-      elif event.lower() in ['d', 'i']:
+      elif event.lower() in ['d', 'a']:
         office['since'] = date
         office['holder'] = actor
         if not actor in ['UNKNOWN', empty_holder]:
-          event_log.append('{0} {1} deputizes to become {2}'.format(date, sh_n(actor, False), sh_a(name, False)))
+          verb = 'deputizes to become'
+          if event.lower() == 'a':
+            verb = 'appointed to'
+          event_log.append('{0} {1} {2} {3}'.format(date, sh_n(actor, False), verb, sh_a(name, False)))
       elif event.lower() == 'r':
         office['since'] = empty_date
         office['holder'] = empty_holder
@@ -125,7 +128,7 @@ def can_elect(name, date):
   if name.lower() == 'speaker':
     return 'Never'
   if date != '----------':
-    today = datetime.now()
+    today = datetime.utcnow()
     d1 = datetime.strptime(date, "%Y-%m-%d")
     if abs((today - d1).days) > 90:
       return 'Y'
