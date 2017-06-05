@@ -48,10 +48,10 @@ def populate_events():
 
       date = row[0]
       name = row[1]
-      event = row[2]
+      event = row[2].lower()
       actor = row[3]
       office = get_office(name)
-      if event.lower() == 'e':
+      if event == 'e':
         office['elected'] = date
         if office['holder'] != actor:
           office['since'] = date
@@ -59,23 +59,23 @@ def populate_events():
         if not actor in ['UNKNOWN', empty_holder]:
           event_log.append('{0} {1} elected to {2}'.format(date, actor, name))
 
-      elif event.lower() in ['d', 'a']:
+      elif event in ['d', 'a']:
         office['since'] = date
         office['holder'] = actor
         if not actor in ['UNKNOWN', empty_holder]:
           verb = 'deputizes to become'
-          if event.lower() == 'a':
+          if event == 'a':
             verb = 'appointed to'
           event_log.append('{0} {1} {2} {3}'.format(date, sh_n(actor, False), verb, sh_a(name, False)))
-      elif event.lower() == 'r':
+      elif event == 'r':
         office['since'] = empty_date
         office['holder'] = empty_holder
         event_log.append('{0} {1} resigns from {2}'.format(date, sh_n(actor, False), sh_a(name, False)))
-      elif event.lower() == 'w':
+      elif event == 'w':
         report_info = get_report_need(name)
         report_info['weekly_date'] = date
         event_log.append('{0} {1} publishes weekly {2} report'.format(date, sh_n(actor, False), sh_a(name, False)))
-      elif event.lower() == 'm':
+      elif event == 'm':
         report_info = get_report_need(name)
         report_info['monthly_date'] = date
         event_log.append('{0} {1} publishes monthly {2} report'.format(date, sh_n(actor, False), sh_a(name, False)))
@@ -90,12 +90,12 @@ def populate_reporting_needs():
     event_reader = csv.reader(csvfile)
     for row in event_reader:
       office = row[0]
-      report_type = row[1]
+      report_type = row[1].lower()
       report_name = row[2]
       report_info = get_report_need(office)
-      if report_type.lower() == 'm':
+      if report_type == 'm':
         report_info['monthly'] = report_name
-      elif report_type.lower() == 'w':
+      elif report_type == 'w':
         report_info['weekly'] = report_name
 
 abrevs = {}
@@ -173,6 +173,8 @@ def print_table(data):
   print output.split('\n')[1]
 
 def print_offices():
+  clear_abrevs()
+
   print """NB: The "PR|RR" and "Holder" columns of this report are
 self-ratifying."""
 
