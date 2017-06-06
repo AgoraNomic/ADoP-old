@@ -57,7 +57,7 @@ def populate_events():
           office['since'] = date
         office['holder'] = actor
         if not actor in ['UNKNOWN', empty_holder]:
-          event_log.append('{0} {1} elected to {2}'.format(date, actor, name))
+          event_log.append('{0} {1} elected to {2}'.format(date, sh_e(actor), sh_e(name)))
 
       elif event in ['d', 'a']:
         office['since'] = date
@@ -66,19 +66,19 @@ def populate_events():
           verb = 'deputizes to become'
           if event == 'a':
             verb = 'appointed to'
-          event_log.append('{0} {1} {2} {3}'.format(date, sh_n(actor, False), verb, sh_a(name, False)))
+          event_log.append('{0} {1} {2} {3}'.format(date, sh_e(actor), verb, sh_e(name)))
       elif event == 'r':
         office['since'] = empty_date
         office['holder'] = empty_holder
-        event_log.append('{0} {1} resigns from {2}'.format(date, sh_n(actor, False), sh_a(name, False)))
+        event_log.append('{0} {1} resigns from {2}'.format(date, sh_e(actor), sh_e(name)))
       elif event == 'w':
         report_info = get_report_need(name)
         report_info['weekly_date'] = date
-        event_log.append('{0} {1} publishes weekly {2} report'.format(date, sh_n(actor, False), sh_a(name, False)))
+        event_log.append('{0} {1} publishes weekly {2} report'.format(date, sh_e(actor), sh_e(name)))
       elif event == 'm':
         report_info = get_report_need(name)
         report_info['monthly_date'] = date
-        event_log.append('{0} {1} publishes monthly {2} report'.format(date, sh_n(actor, False), sh_a(name, False)))
+        event_log.append('{0} {1} publishes monthly {2} report'.format(date, sh_e(actor), sh_e(name)))
 
 def get_report_need(name):
   if name not in reporting_needs:
@@ -99,24 +99,36 @@ def populate_reporting_needs():
         report_info['weekly'] = report_name
 
 abrevs = {}
+
+# shorten agency
 def sh_a(name, add_num=True):
   return shorten(name, 14, add_num)
 
+# shorten name
 def sh_n(name, add_num=True):
   return shorten(name, 8, add_num)
+
+# shorten for events
+def sh_e(name):
+  return shorten(name, 15, False)
 
 def shorten(name, amount, add_num=True):
   if (len(name) > amount):
     abrev = "".join(word[0] for word in name.split())
-    if abrev not in abrevs:
-      if add_num:
+
+    # In the add num case we need to store and lookup to keep numbering consistent
+    if add_num:
+      if abrev not in abrevs:
         global abrev_num
         abrevs[abrev] = {'name': name, 'text': abrev + "[{0}]".format(abrev_num)}
         abrev_num += 1
-      else:
-        abrevs[abrev] = {'name': name, 'text': abrev}
+      return abrevs[abrev]['text']
 
-    return abrevs[abrev]['text']
+    # in the not add num case we can regenerate each time
+    else:
+        return abrev
+
+  # Didn't need to abbreviate
   return name
 
 def clear_abrevs():
@@ -173,8 +185,6 @@ def print_table(data):
   print output.split('\n')[1]
 
 def print_offices():
-  clear_abrevs()
-
   print """NB: The "PR|RR" and "Holder" columns of this report are
 self-ratifying."""
 

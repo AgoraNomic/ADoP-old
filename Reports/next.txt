@@ -4,12 +4,12 @@ reports.
 <---------------------------------------------------------------------->
 
 Offices and Reports
-Date of this report: 2017-06-05
+Date of this report: 2017-06-06
 Date of last report: 2017-06-05
 
 Informal measures
 -----------------
-Administrative Health [1]: 80.0%
+Administrative Health [1]: 86.67%
 Consolidation [2]: 2.14
 
 [1] Calculated by the weighted average of # of offices filled/total and
@@ -56,7 +56,7 @@ Office          M[1]  Report                  Last Published  Late[2]
 -----------------------------------------------------------------------
 ADoP[3]               Offices                 2017-06-05               
 Herald          Y     Patent titles           2017-05-20               
-Promotor              Proposal pool           2017-05-21      !!       
+Promotor              Proposal pool           2017-06-06               
 Referee               Rule violations         2017-06-02               
 Registrar             Players, Fora           2017-06-05               
 Registrar       Y     Player history          2017-05-31               
@@ -68,7 +68,7 @@ Secretary       Y     Charters                2017-06-02
 Superintendent        Agencies (incremental)  2017-06-05               
 Superintendent  Y     Agencies (Full)         2017-05-18               
 Surveyor              Estates                 2017-06-02               
-Tailor          Y     Ribbons                 2017-05-18               
+Tailor          Y     Ribbons                 2017-06-06               
 -----------------------------------------------------------------------
 [1] Monthly
 [2] ! = 1 period missed. !! = 2 periods missed. !!! = 3+ periods missed.
@@ -129,7 +129,9 @@ EVENTS
 2017-06-05 Quazie publishes weekly Superintendent report
 2017-06-05 Quazie deputizes to become ADoP
 2017-06-05 Quazie publishes weekly ADoP report
-2017-06-05 V deputizes to become Reportor
-2017-06-05 V publishes weekly Reportor report
+2017-06-05 Veggiekeks deputizes to become Reportor
+2017-06-05 Veggiekeks publishes weekly Reportor report
+2017-06-06 Aris publishes weekly Promotor report
+2017-06-06 ais523 publishes monthly Tailor report
 
 <---------------------------------------------------------------------->
