@@ -42,7 +42,7 @@ def get_office(name):
   return offices[name]
 
 def populate_events():
-  with open(os.path.join(__location__, 'events.csv')) as csvfile:
+  with open(os.path.join(__location__, '../data/events.csv')) as csvfile:
     event_reader = csv.reader(csvfile)
     for row in event_reader:
 
@@ -86,7 +86,7 @@ def get_report_need(name):
   return reporting_needs[name]
 
 def populate_reporting_needs():
-  with open(os.path.join(__location__, 'reports.csv')) as csvfile:
+  with open(os.path.join(__location__, '../data/reports.csv')) as csvfile:
     event_reader = csv.reader(csvfile)
     for row in event_reader:
       office = row[0]
