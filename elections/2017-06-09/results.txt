@@ -1,0 +1,126 @@
+I resolve the Agoran Decisions for ADoP, Registrar, and Referee as follows:
+
+ADoP: Quazie is the winner, and remains holder of the office.
+Registrar: Publius Scribonius Scholasticus is the winner, and remains holder of the office
+Referee: o is the winner, and remains holder of the office.
+
+
+<------------------->
+
+Full results for ADoP:
+  Towards Quorum: 8, Cast Votes: 6
+o
+  Vote   : nichdel
+  As Cast: nichdel, followed by Gaelan.
+
+nichdel
+  Vote   : Quazie
+  As Cast: [Quazie]
+
+Publius Scribonius Scholasticus
+  Vote   : Quazie
+  As Cast: I endorse nichdel.
+
+CuddleBeam
+  Vote   : PRESENT
+  As Cast: I vote PRESENT
+
+天火狐
+  Vote   : PRESENT
+  As Cast: I endorse the incumbent, if any; should the office be vacant, I vote PRESENT
+
+roujo
+  Vote   : Quazie
+  As Cast: I submit a vote for whoever 天火狐's vote currently counts for
+
+Quazie
+  Vote   : Quazie
+  As Cast: I vote as follows:
+   [Quazie] followed by a list that is equivalent to endorsing the current office holder.
+
+If the above vote is invalid, or results in PRESENT I instead vote:
+   [Quazie, nichdel]
+
+Quazie
+  Vote   : Quazie
+  As Cast: I vote as follows:
+   [Quazie] followed by a list that is equivalent to endorsing the current office holder.
+
+If the above vote is invalid, or results in PRESENT I instead vote:
+   [Quazie, nichdel]
+
+<------------------->
+
+Full results for Registrar:
+  Towards Quorum: 8, Cast Votes: 7
+o
+  Vote   : Quazie
+  As Cast: Quazie, followed by Publius Scribonius Scholasticus.
+
+nichdel
+  Vote   : Publius Scribonius Scholasticus
+  As Cast: endorse PSS, nichdel
+
+Publius Scribonius Scholasticus
+  Vote   : Publius Scribonius Scholasticus
+  As Cast: I vote for Publius Scribonius Scholasticus.
+
+CuddleBeam
+  Vote   : PRESENT
+  As Cast: I vote PRESENT
+
+天火狐
+  Vote   : Publius Scribonius Scholasticus
+  As Cast: I endorse the incumbent, if any; should the office be vacant, I vote PRESENT
+
+roujo
+  Vote   : Publius Scribonius Scholasticus
+  As Cast: I submit a vote for whoever 天火狐's vote currently counts for
+
+Quazie
+  Vote   : Publius Scribonius Scholasticus
+  As Cast: if the current office holder places a vote other than PRESENT I endorse em, otherwise I vote for em.
+
+Quazie
+  Vote   : Publius Scribonius Scholasticus
+  As Cast: if the current office holder places a vote other than PRESENT I endorse em, otherwise I vote for em.
+
+<------------------->
+
+Full results for Referee:
+  Towards Quorum: 8, Cast Votes: 7
+o
+  Vote   : o
+  As Cast: o.
+
+nichdel
+  Vote   : o
+  As Cast: I endorse the current officeholder.
+
+Publius Scribonius Scholasticus
+  Vote   : o
+  As Cast: I endorse o.
+
+CuddleBeam
+  Vote   : PRESENT
+  As Cast: I vote PRESENT
+
+天火狐
+  Vote   : o
+  As Cast: I endorse the incumbent, if any; should the office be vacant, I vote PRESENT
+
+roujo
+  Vote   : o
+  As Cast: I submit a vote for whoever 天火狐's vote currently counts for
+
+Quazie
+  Vote   : o
+  As Cast: if the current office holder places a vote other than PRESENT I endorse em, otherwise I vote for em.
+
+Quazie
+  Vote   : o
+  As Cast: if the current office holder places a vote other than PRESENT I endorse em, otherwise I vote for em.
+
+<------------------->
+
+[Note: Quazie has two ballots as his VP is 2 via Prime Minister]
