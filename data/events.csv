@@ -18,6 +18,7 @@
 2017-05-08,Surveyor,D,o
 2017-05-10,Surveyor,E,o
 2017-05-15,Arbitor,D,ais523
+2017-05-16,Promotor,w,Aris
 2017-05-17,Rulekeepor,D,Gaelan
 2017-05-17,Rulekeepor,W,Gaelan
 2017-05-17,Tailor,D,ais523
@@ -46,19 +47,19 @@
 2017-05-28,Rulekeepor,w,Gaelan
 2017-05-29,Assessor,r,nichdel
 2017-05-29,Associate Director of Personnel,r,nichdel
+2017-05-29,Promotor,w,Aris
 2017-05-29,Reportor,r,nichdel
 2017-05-29,Speaker,r,nichdel
 2017-05-31,Registrar,M,Publius Scribonius Scholasticus
 2017-06-01,Speaker,a,ais523
-2017-06-02,Secretary,W,o
-2017-06-02,Secretary,M,o
 2017-06-02,Referee,W,o
+2017-06-02,Secretary,M,o
+2017-06-02,Secretary,W,o
 2017-06-02,Surveyor,W,o
-2017-06-05,Registrar,W,Publius Scribonius Scholasticus
 2017-06-05,Assessor,D,Quazie
-2017-06-05,Superintendent,W,Quazie
 2017-06-05,Associate Director of Personnel,D,Quazie
 2017-06-05,Associate Director of Personnel,w,Quazie
+2017-06-05,Registrar,W,Publius Scribonius Scholasticus
 2017-06-05,Reportor,D,Veggiekeks
 2017-06-05,Reportor,w,Veggiekeks
 2017-06-06,Promotor,w,Aris
@@ -66,3 +67,4 @@
 2017-06-09,Associate Director of Personnel,E,Quazie
 2017-06-09,Referee,E,o
 2017-06-09,Registrar,E,Publius Scribonius Scholasticus
+2017-06-10,Superintendent,W,Quazie
