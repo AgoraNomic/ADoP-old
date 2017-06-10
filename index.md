@@ -7,7 +7,7 @@
 
 [The next (unofficial) report](Reports/next.txt) 
 
-[The Latest](Reports/2017-06-05.txt) (2017-06-05.txt)
+[The Latest](Reports/2017-06-10.txt) (2017-06-10.txt)
 
 ## Past
 
