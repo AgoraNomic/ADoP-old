@@ -5,11 +5,11 @@ reports.
 
 Offices and Reports
 Date of this report: 2017-06-10
-Date of last report: 2017-06-05
+Date of last report: 2017-06-10
 
 Informal measures
 -----------------
-Administrative Health [1]: 86.67%
+Administrative Health [1]: 96.67%
 Consolidation [2]: 2.14
 
 [1] Calculated by the weighted average of # of offices filled/total and
@@ -54,7 +54,7 @@ election for any office with 4 Support per R2154(2).
 
 Office          M[1]  Report                  Last Published  Late[2]  
 -----------------------------------------------------------------------
-ADoP[3]               Offices                 2017-06-05               
+ADoP[3]               Offices                 2017-06-10               
 Herald          Y     Patent titles           2017-05-20               
 Promotor              Proposal pool           2017-06-06               
 Referee               Rule violations         2017-06-02               
@@ -137,6 +137,6 @@ EVENTS
 2017-06-09 Quazie elected to ADoP
 2017-06-09 o elected to Referee
 2017-06-09 PSS elected to Registrar
-2017-06-05 Quazie publishes weekly ADoP report
+2017-06-10 Quazie publishes weekly ADoP report
 
 <---------------------------------------------------------------------->

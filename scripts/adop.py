@@ -266,6 +266,7 @@ def health_val():
     if name is not empty_holder:
       completed += 1
 
+
   for report in reporting_needs.keys():
     info = reporting_needs[report]
     if info['weekly']:
@@ -274,7 +275,7 @@ def health_val():
         completed += 1
     if info['monthly']:
       availible += 1
-      if not week_late(info['monthly_date']):
+      if not month_late(info['monthly_date']):
         completed += 1
 
   return round((float(completed)/availible) * 100,2)
