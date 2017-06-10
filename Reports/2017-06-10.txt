@@ -5,7 +5,7 @@ reports.
 
 Offices and Reports
 Date of this report: 2017-06-10
-Date of last report: 2017-06-05
+Date of last report: 2017-05-26
 
 Informal measures
 -----------------
@@ -25,23 +25,23 @@ NB: The "PR|RR" and "Holder" columns of this report are
 self-ratifying.
 
 
-Office          PR|RR[1]  Holder  Since       Last Election  Can Elect[2]  
+Office          PR|RR[1]  Holder  Since       Last Election  Can Elect[2]
 ---------------------------------------------------------------------------
-Arbitor          2|2      ais523  2017-05-15  2017-05-26                   
-Assessor         2|2      Quazie  2017-06-05  2017-05-26                   
-ADoP[3]          2|2      Quazie  2017-06-05  2017-06-09                   
-Herald           2|2      PSS[4]  2017-05-20  2015-07-02     Y             
-Prime Minister   2|2      Quazie  2017-05-21  2016-10-22     Y             
-Promotor         2|2      Aris    2016-10-21  2017-05-26                   
-Referee          2|2      o       2017-04-17  2017-06-09                   
-Registrar        2|2      PSS[4]  2017-04-18  2017-06-09                   
-Reportor         2|2      V[5]    2017-06-05  2016-08-30     Y             
-Rulekeepor       2|2      Gaelan  2017-05-17  2017-05-26                   
-Secretary        2|2      o       2016-11-06  ----------     Y             
-Speaker          2|2      ais523  2017-06-01  2014-04-21     Never         
-Superintendent   2|2      Quazie  2017-04-16  ----------     Y             
-Surveyor         2|2      o       2017-05-08  2017-05-10                   
-Tailor           2|2      ais523  2017-05-17  ----------     Y             
+Arbitor          2|2      ais523  2017-05-15  2017-05-26
+Assessor         2|2      Quazie  2017-06-05  2017-05-26
+ADoP[3]          2|2      Quazie  2017-06-05  2017-06-09
+Herald           2|2      PSS[4]  2017-05-20  2015-07-02     Y
+Prime Minister   2|2      Quazie  2017-05-21  2016-10-22     Y
+Promotor         2|2      Aris    2016-10-21  2017-05-26
+Referee          2|2      o       2017-04-17  2017-06-09
+Registrar        2|2      PSS[4]  2017-04-18  2017-06-09
+Reportor         2|2      V[5]    2017-06-05  2016-08-30     Y
+Rulekeepor       2|2      Gaelan  2017-05-17  2017-05-26
+Secretary        2|2      o       2016-11-06  ----------     Y
+Speaker          2|2      ais523  2017-06-01  2014-04-21     Never
+Superintendent   2|2      Quazie  2017-04-16  ----------     Y
+Surveyor         2|2      o       2017-05-08  2017-05-10
+Tailor           2|2      ais523  2017-05-17  ----------     Y
 ---------------------------------------------------------------------------
 [1] Payrate and Report Rate
 [2] Whether an election for this position can be initiated by
@@ -52,23 +52,23 @@ election for any office with 4 Support per R2154(2).
 [5] Veggiekeks
 
 
-Office          M[1]  Report                  Last Published  Late[2]  
+Office          M[1]  Report                  Last Published  Late[2]
 -----------------------------------------------------------------------
-ADoP[3]               Offices                 2017-06-05               
-Herald          Y     Patent titles           2017-05-20               
-Promotor              Proposal pool           2017-06-06               
-Referee               Rule violations         2017-06-02               
-Registrar             Players, Fora           2017-06-05               
-Registrar       Y     Player history          2017-05-31               
-Reportor              The Agoran Newspaper    2017-06-05               
-Rulekeepor            Short Logical Ruleset   2017-05-28      !        
-Rulekeepor      Y     Full Logical Ruleset    2017-05-28               
-Secretary             OLEaB[4]                2017-06-02               
-Secretary       Y     Charters                2017-06-02               
-Superintendent        Agencies (incremental)  2017-06-09               
-Superintendent  Y     Agencies (Full)         2017-05-18               
-Surveyor              Estates                 2017-06-02               
-Tailor          Y     Ribbons                 2017-06-06               
+ADoP[3]               Offices                 2017-06-05
+Herald          Y     Patent titles           2017-05-20
+Promotor              Proposal pool           2017-06-06
+Referee               Rule violations         2017-06-02
+Registrar             Players, Fora           2017-06-05
+Registrar       Y     Player history          2017-05-31
+Reportor              The Agoran Newspaper    2017-06-05
+Rulekeepor            Short Logical Ruleset   2017-05-28      !
+Rulekeepor      Y     Full Logical Ruleset    2017-05-28
+Secretary             OLEaB[4]                2017-06-02
+Secretary       Y     Charters                2017-06-02
+Superintendent        Agencies (incremental)  2017-06-05
+Superintendent  Y     Agencies (Full)         2017-05-18
+Surveyor              Estates                 2017-06-02
+Tailor          Y     Ribbons                 2017-06-06
 -----------------------------------------------------------------------
 [1] Monthly
 [2] ! = 1 period missed. !! = 2 periods missed. !!! = 3+ periods missed.
@@ -128,15 +128,15 @@ EVENTS
 2017-06-02 o publishes weekly Surveyor report
 2017-06-05 Quazie deputizes to become Assessor
 2017-06-05 Quazie deputizes to become ADoP
-2017-06-05 Quazie publishes weekly ADoP report
 2017-06-05 PSS publishes weekly Registrar report
 2017-06-05 Veggiekeks deputizes to become Reportor
 2017-06-05 Veggiekeks publishes weekly Reportor report
+2017-06-05 Quazie publishes weekly Superintendent report
 2017-06-06 Aris publishes weekly Promotor report
 2017-06-06 ais523 publishes monthly Tailor report
 2017-06-09 Quazie elected to ADoP
 2017-06-09 o elected to Referee
 2017-06-09 PSS elected to Registrar
-2017-06-09 Quazie publishes weekly Superintendent report
+2017-06-05 Quazie publishes weekly ADoP report
 
 <---------------------------------------------------------------------->
