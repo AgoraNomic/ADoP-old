@@ -1,0 +1,119 @@
+I resolve the Agoran Decisions for Secretary, Superintendent, and Referee as Tailor:
+
+Secretary: o is the winner, and remains holder of the office.
+Superintendent: Publius Scribonius Scholasticus is the winner, and becomes holder of the office
+Tailor: ais523 is the winner, and remains holder of the office.
+
+<------------------->
+
+Full results for Secretary:
+  Towards Quorum: 8, Cast Votes: 6
+Quazie
+  Vote   : o
+  As Cast: I endorse o
+
+天火狐
+  Vote   : PRESENT
+  As Cast: I vote PRESENT.
+
+ais523
+  Vote   : o
+  As Cast: I vote for the incumbent.
+
+Veggiekeks
+  Vote   : o
+  As Cast: I endorse o.
+
+Murphy
+  Vote   : o
+  As Cast: I endorse the current holder of the office in question.
+
+o
+  Vote   : o
+  As Cast: o, followed by nichdel.
+
+v.j. Rada
+  Vote   : PRESENT
+  As Cast: I vote PRESENT on all 3
+
+Publius Scribonius Scholasticus
+  Vote   : o
+  As Cast: I endorse the incumbent.
+
+
+<------------------->
+
+Full results for Superintendent:
+  Towards Quorum: 8, Cast Votes: 6
+Quazie
+  Vote   : Publius Scribonius Scholasticus
+  As Cast: I vote for the first player to non-conditionally vote for emself.
+
+天火狐
+  Vote   : Publius Scribonius Scholasticus
+  As Cast: I endorse the incumbent.
+
+ais523
+  Vote   : Publius Scribonius Scholasticus
+  As Cast: I vote for the set of persons who unconditionally vote for themselves, in the order of said votes.
+
+Veggiekeks
+  Vote   : Publius Scribonius Scholasticus
+  As Cast: I endorse Publius Scribonius Scholasticus.
+
+Murphy
+  Vote   : Publius Scribonius Scholasticus
+  As Cast: I endorse the current holder of the office in question.
+
+o
+  Vote   : PRESENT
+  As Cast: I vote PRESENT, as there’s nobody I would wish this office upon.
+
+v.j. Rada
+  Vote   : PRESENT
+  As Cast: I vote PRESENT on all 3
+
+Publius Scribonius Scholasticus
+  Vote   : Publius Scribonius Scholasticus
+  As Cast:  I vote for myself.
+
+
+<------------------->
+
+Full results for Tailor:
+  Towards Quorum: 8, Cast Votes: 6
+Quazie
+  Vote   : ais523
+  As Cast: I endorse ais523
+
+天火狐
+  Vote   : PRESENT
+  As Cast:    * First, if a candidate for the office of Tailor pledges to award me a grAy ribbon in eir next monthly report if they become Tailor, I cast my first-priority votes for that candidate. If there is more than one such candidate, preference is given to the earliest such pledge.
+   * Next, the final candidate before the vote is closed who transfers me a Shiny for the purpose of securing my vote is awarded my second-priority votes. (Which, to clarify, if the first priority votes are empty, the second-priority votes de facto become first-priority votes)
+   * Otherwise, I vote PRESENT.
+
+ais523
+  Vote   : ais523
+  As Cast: I vote for myself.
+
+Veggiekeks
+  Vote   : ais523
+  As Cast: I endorse ais523.
+
+Murphy
+  Vote   : ais523
+  As Cast: I endorse the current holder of the office in question.
+
+o
+  Vote   : ais523
+  As Cast: I vote for the incumbent.
+
+v.j. Rada
+  Vote   : PRESENT
+  As Cast: I vote PRESENT on all 3
+
+Publius Scribonius Scholasticus
+  Vote   : Publius Scribonius Scholasticus
+  As Cast: I endorse the incumbent.
+
+

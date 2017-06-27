@@ -53,7 +53,7 @@ def populate_events():
       office = get_office(name)
       if event == 'e':
         office['elected'] = date
-        if office['holder'] != actor:
+        if office['holder'].lower() != actor.lower():
           office['since'] = date
         office['holder'] = actor
         if not actor in ['UNKNOWN', empty_holder]:

@@ -60,8 +60,8 @@ def election(office):
 
 
 print("<------------------->\n")
-election("ADoP")
+election("Secretary")
 print("<------------------->\n")
-election("Registrar")
+election("Superintendent")
 print("<------------------->\n")
-election("Referee")
+election("Tailor")
