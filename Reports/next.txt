@@ -55,11 +55,11 @@ election for any office with 4 Support per R2154(2).
 Office          M[1]  Report                  Last Published  Late[2]  
 -----------------------------------------------------------------------
 ADoP[3]               Offices                 2017-07-08               
-Herald          Y     Patent titles           2017-07-01               
+Herald          Y     Patent titles           2017-05-20      !        
 Promotor              Proposal pool           2017-07-01               
 Referee               Rule violations         2017-07-06               
 Registrar             Players, Fora           2017-07-02               
-Registrar       Y     Player history          2017-05-31      !        
+Registrar       Y     Player history          2017-07-01               
 Reportor              The Agoran Newspaper    2017-06-18      !!       
 Rulekeepor            Short Logical Ruleset   2017-06-23      !        
 Rulekeepor      Y     Full Logical Ruleset    2017-06-23               
@@ -159,7 +159,7 @@ EVENTS
 2017-06-27 o publishes weekly Surveyor report
 2017-06-27 o publishes weekly Secretary report
 2017-07-01 PSS publishes monthly Superintendent report
-2017-07-01 PSS publishes monthly Herald report
+2017-07-01 PSS publishes monthly Registrar report
 2017-07-01 Aris publishes weekly Promotor report
 2017-07-02 PSS publishes weekly Superintendent report
 2017-07-02 PSS publishes weekly Registrar report
